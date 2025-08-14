@@ -15,55 +15,227 @@
   </head>
   <body>
     <header>
-      <div><img src="./imgs/logo.png" alt="" /></div>
-      <div class="menu">
-        <ul>
-          <i class="fa-solid fa-pen"></i>
-          Avis
-        </ul>
-        <ul>
-          <i class="fa-solid fa-heart"></i>
-          Voyages
-        </ul>
-        <ul>
-          <i class="fa-solid fa-bell"></i>
-          Alertes
-        </ul>
-        <ul class="bouton">
-          Connectez-vous
-        </ul>
-        <ul>
-          <i class="fa-solid fa-cart-shopping"></i>
-          Panier
-        </ul>
+      <div class="wrapper header-container">
+        <img src="./imgs/logo.png" alt="logo trip" />
+        <nav>
+          <div><i class="fa-solid fa-pen"></i>Avis</div>
+          <div><i class="fa-solid fa-pencil"></i> Voyages</div>
+          <div><i class="fa-solid fa-bell"></i> Alertes</div>
+          <button>Connectez-vous</button>
+          <div><i class="fa-solid fa-cart-shopping"></i> Panier</div>
+        </nav>
       </div>
     </header>
-    <section class="section1">
-      <h1>Explorez Paris</h1>
-      <h2>
-        Les revenus influencent le choix des expériences présentées sur cette
-        page : en savoir plus.
-      </h2>
-    </section>
-    <div class="section2">
-      <ul>
-        Hôtels
-      </ul>
-      <ul>
-        Locations de vacances
-      </ul>
-      <ul>
-        Activités
-      </ul>
-      <ul>
-        Restaurants
-      </ul>
-      <ul>
-        Forums de voyages
-      </ul>
-      <ul>
-        Plus
-      </ul>
-    </div>
+    <main class="wrapper">
+      <h1><span class="h1-change-color">Explorez</span> Paris</h1>
+      <nav class="main-top-nav">
+        <div><span>Hôtel</span><i class="fa-solid fa-bed"></i></div>
+        <div>
+          <span>Locations de vacances</span><i class="fa-solid fa-house"></i>
+        </div>
+        <div><span>Activités</span><i class="fa-solid fa-ticket"></i></div>
+        <div><span>Restaurants</span><i class="fa-solid fa-utensils"></i></div>
+        <div>
+          <span>Forums de voyage</span><i class="fa-solid fa-comment"></i>
+        </div>
+        <div><span>Plus</span><i class="fa-solid fa-plus"></i></div>
+      </nav>
+      <nav><ul class="menu">
+  <li><a href="">Locations de vacances</a></li>
+  <li><a href="">Activités</a></li>
+  <li><a href="">Restaurants</a></li>
+  <li><a href="">Forums de voyage</a></li>
+  <li><a href="">Plus</a></li>
+</ul></nav>
+      <section class="picture-bloc">
+        <div class="left-bloc-picture">
+          <img src="./imgs/161207-geode-vr.jpg" alt="" />
+          <button class="pics">
+            <i class="fa-solid fa-images"></i> Toutes les photos
+          </button>
+        </div>
+        <div class="right-bloc-picture">
+          <div class="right-bloc-picture-up">
+            <img src="./imgs/HMO9ESJ.jpg" alt="" />
+          </div>
+          <div class="right-bloc-picture-down">
+            <img src="./imgs/Toit-Bellevilloise.webp" alt="" />
+          </div>
+        </div>
+      </section>
+      <p>
+        Europe > France > Ile de France > Paris
+        <i class="fa-solid fa-arrow-down"></i>
+      </p>
+      <section class="section2">
+        <div class="about-left">
+          <h2>La Ville Lumière éblouit en tous points</h2>
+          <p>
+            Aucun autre endroit au monde ne fait autant rêver que Paris. La
+            ville séduit par son art, son architecture, sa culture et sa
+            cuisine, mais il y a aussi des merveilles plus discrètes qui
+            n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+            les pâtisseries au coin de la rue et les petits bistrots douillets
+            qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+            vous approprier Paris.
+          </p>
+        </div>
+        <div class="about-right">
+          <div class="ar-top">
+            <h2>Paris : commencez à organiser !</h2>
+            <p>
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <button>Créez un voyage</button>
+          </div>
+          <img src="./imgs/Capture d’écran 2025-08-13 à 16.04.57.png" alt="" />
+        </div>
+      </section>
+      <section class="carousel-section">
+        <h2>Paris : les immanquables</h2>
+        <div>
+          <div class="carousel-left">
+            <h4>Se divertir</h4>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences emblématiques à Paris.
+            </p>
+            <p>Tout afficher</p>
+          </div>
+          <div class="carousel-right">
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/montmartre.webp" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>Montmartre</h5>
+                <p>Tours et observations</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/supersonic.jpg" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>Supersonic</h5>
+                <p>Artistes musicaux soirée</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/tati.jpg" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>Tati</h5>
+                <p>Emblème</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/museegrevin.jpeg" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>Musée Grevin</h5>
+                <p>Tours guidés</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/seine.jpg" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>La Seine</h5>
+                <p>Visite en bâteau</p>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+          <section class="carousel-section2">
+        <h2>Se restaurer</h2>
+        <div>
+          <div class="carousel-left">
+           
+            <p>
+              Bistrots et bars typiques, et plus encore à Paris.
+            </p>
+            <p>Tout afficher</p>
+          </div>
+          <div class="carousel-right">
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/belle-vie.jpg" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>La belle Vie</h5>
+                <p>Restaurant et bar dansant belleville</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/aujourd.jpeg" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>Aujourd'hui Demain</h5>
+                <p>Brunch vegan</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/jeanette.jpg" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>Chez jeanette</h5>
+                <p>Café restaurant cinéma</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/belleville.jpg" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>Aux mandarins de Belleville</h5>
+                <p>Cuisine chinoise</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-pic">
+                <img src="./imgs/yemma.jpg" alt="" />
+                <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="carousel-item-desc">
+                <h5>La table de yemma</h5>
+                <p>cuisine algérienne</p>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section5">
+        <p>Guides de voyageurs</p>
+        <div>
+          <img src="./imgs/Capture d’écran 2025-08-13 à 16.51.37.png" alt="" />
+          <img src="./imgs/Capture d’écran 2025-08-13 à 16.51.43.png" alt="" />
+          <img src="./imgs/Capture d’écran 2025-08-13 à 16.51.50.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="./imgs/icon.png" alt="" />
+      <p>Made at Le Reacteur by Marty Mcfly</p>
+    </footer>
   </body>
 </html>

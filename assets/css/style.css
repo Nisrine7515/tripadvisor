@@ -2,36 +2,259 @@
   box-sizing: border-box;
 }
 
-body {
+.wrapper {
+  max-width: 1135px;
+  margin: 0 auto;
+}
+
+body,
+button,
+a {
   font-family: TS-Reg, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 54px;
+  font-family: TS-Med, sans-serif;
+  font-weight: bold;
 }
 
 header {
+  height: 60px;
+  border-bottom: 1px solid lightgray;
+}
+
+header img {
+  height: 70px;
+}
+
+.header-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container nav {
+  display: flex;
+
+  gap: 20px;
+}
+
+.header-container nav button {
+  font-family: TS-Med, sans-serif;
+}
+
+main.wrapper {
+  margin-top: 50px;
+}
+
+.h1-change-color {
+  color: coral;
+}
+
+.main-top-nav {
+  margin: 50px 0px;
+  display: flex;
+  gap: 10px;
+}
+
+.main-top-nav > div {
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.picture-bloc {
+  height: 430px;
+
+  display: flex;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.left-bloc-picture {
+  position: relative;
+  flex: 1;
+}
+
+.right-bloc-picture {
+  width: 480px;
+}
+
+.right-bloc-picture-up {
+  height: calc(50% - 1px);
+  margin-bottom: 2px;
+}
+
+.right-bloc-picture-down {
+  height: calc(50% - 1px);
+}
+
+.picture-bloc img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pics {
+  font-size: 12px;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.left-bloc-picture p {
+  color: rgb(114, 108, 108);
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-family: TS-Med;
+}
+
+.section2 {
+  display: flex;
+  gap: 70px;
+  justify-content: space-between;
+}
+
+.about-left {
+  width: 55%;
+  color: rgb(62, 59, 59);
+  flex: 1;
+}
+
+.about-right {
+  width: 40%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.about-right img {
+  width: 100%;
+  display: block; /* comporte toi comme une div !!!*/
+}
+
+.about-right button {
+  padding: 20px;
+}
+
+.ar-top {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: lightcoral;
+}
+
+.carousel-section {
+  margin-bottom: 100px;
+}
+
+.carousel-section > div {
+  display: flex;
+  gap: 30px;
+}
+
+.carousel-left {
+  flex: 1;
+  padding: 20px;
+}
+
+.carousel-right {
+  flex: 3;
+  display: flex;
+  overflow: scroll;
+  gap: 15px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-right::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  width: calc((100% - 30px) / 3);
+  flex-shrink: 0;
+}
+
+.carousel-pic {
+  height: 190px;
+
+  position: relative;
+}
+
+.heart-icon {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.carousel-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item-desc {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.carousel-section2 {
+  margin-bottom: 100px;
+}
+
+.carousel-section2 > div {
+  display: flex;
+  gap: 30px;
+}
+
+footer {
+  background-color: rgb(237, 220, 220);
+  height: 150px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  border: rgb(112, 104, 104);
+  justify-content: center;
 }
-header img {
-  width: 270px;
-  height: 150px;
+footer img {
+  height: 30px;
 }
 
-header .menu {
+.section5 div {
   display: flex;
-  font-size: 20px;
-  justify-content: space-between;
+  gap: 5px;
 }
 
-header .menu ul {
-  justify-content: space-between;
-}
-
-.section1 {
-  margin-bottom: 30px;
-}
-
-div {
-  display: flex;
-  justify-content: space-between;
+.section5 img {
+  width: 33%;
+  object-fit: cover;
 }
